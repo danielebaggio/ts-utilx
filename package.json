@@ -1,0 +1,25 @@
+{
+  "name": "ts-utilx",
+  "version": "1.0.2",
+  "description": "",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "utility",
+    "angular-utility",
+    "angular",
+    "typescript-utility",
+    "Typescript"
+  ],
+  "author": "Daniele Baggio",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "utilx": "^1.0.2"
+  }
+}
