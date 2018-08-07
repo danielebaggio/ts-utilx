@@ -20,6 +20,10 @@ export const isEven = (element: any) => {
     return element % 2 == 0;
 }
 
+export const isEquals = (element1: any, element2: any) => {
+    return element1 === element2;
+}
+
 export const sortASC = (element: any) => {
     return element.sort((a: any,b: any) => a - b);
 }
@@ -36,6 +40,11 @@ export const last = (element: any) =>{
     return element[element.length-1];
 }
 
-export const first = (element:any) =>{
+export const first = (element: any) =>{
     return element[0] 
+}
+
+export const rgxCharter = (element: any) => {
+    const rgx = /[^a-zA-Z0-9-. ]/g
+    return element.replace(rgx,"");
 }
