@@ -1,12 +1,12 @@
 
 
-// Check if object is empty
+// Check if object
 export const isObject = (obj: any) =>{
     let empty = (typeof obj === "object" && !Array.isArray(obj) && obj !== null);
     return empty;
 }
 
-// Check if object is empty
+// Check if array
 export const isArray = (element: any) => {
     return Array.isArray(element);
 }
@@ -26,21 +26,22 @@ export const isEven = (element: any) => {
     return element % 2 == 0;
 }
 
+// Check if element equals to
 export const isEquals = (element1: any, element2: any) => {
     return element1 === element2;
 }
 
-// Check if is equals to
+// Sort array asc
 export const sortASC = (element: any) => {
     return element.sort((a: any,b: any) => a - b);
 }
 
-// Sort array asc
+// Sort array desc
 export const sortDESC = (element: any) => {
     return element.sort((a: any,b: any) => b - a);
 }
 
-// Sort array desc
+// convert element in a object [key],[value]
 export const toObject = (element: any) =>{
     return element.reduce((obj: any, item: any) => (obj[item.key] = item.value, obj) ,{});
 }
@@ -56,7 +57,7 @@ export const first = (element: any) =>{
 }
 
 // Replace the special character
-export const rgx = (element: any) => {
+export const rgxCharacter = (element: any) => {
     const rgx = /[^a-zA-Z0-9-. ]/g
     return element.replace(rgx,"");
 }
